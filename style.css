@@ -1,0 +1,88 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.navbar {
+    background-color: #0049af;
+}
+
+#logotipo {
+    width: 90px;
+    height: 90px;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: aliceblue;
+    color:#0049af;
+}
+
+#cabecalho  .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
+    color: aliceblue;
+}
+
+.carousel-item img {
+    height: 80vh;
+    width: 100%;
+}
+
+.section-title{
+    font-family: "Anton SC", sans-serif;
+}
+
+.text-colored {
+    color: #ff0000;
+}
+
+.navbar-toggler {
+    background-color: aliceblue;
+    border: #ff0000;
+}
+
+#sobre-o-restaurante,
+#cardapio {
+    background-color: #cad6fd;
+}
+
+.nav-cardapio .nav-link.active,
+#fale-conosco button {
+    background-color:#2200ff;
+    color: aliceblue;
+}
+
+
+
+.social-links li{
+    display: inline;
+    list-style: none;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+#fale-conosco button:hover {
+    background-color: #fdd2ca;
+    color: #ff0000;
+}
+
+.text-colored-blue {
+    color:#2200ff;
+    font-family: "Playwrite CU", cursive;
+}
+
+.text-colored-w {
+    color: #ffff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:#2200ff;
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+}

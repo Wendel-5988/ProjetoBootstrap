@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Bootstrap</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Ga+Maamli&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top" id="cabecalho">
+        <div class="container">
+            <img src="./images/bahia-logotipo.png" alt="Escudo do Bahia" id="logotipo">
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-o-restaurante" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre a loja
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#eventos" class="nav-link">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Feita pra você
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#cardapio" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Produtos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale Conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="./images/slides/slide1.png" alt="Foto do espaço interno do restaurante">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./images/slides/slide4.png" alt="Duas taças de vinho">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./images/slides/slide3.png" alt="Uma mes com comidas">
+                </div>
+            </div>
+            <button type="button" class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button type="button" class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+        <section id="sobre-o-restaurante">    
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./images/frente-loja.jpg_large" alt="Foto do espaço interno do restaurante" class="d-block w-100 rounded">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title"> <span class="text-colored-w">Sobre a loja</span></h2>
+                            <p>
+                                Espaço destinado a tricolores de coração que buscam roupas de qualidade duvidosa e valores semelhantes ás originais. Não garantimos que a entrega será feita.
+                            </p>
+                            <h3 class="section-title"> <span class="text-colored-w">Sobre o espaço</span></h3>
+                            <p>
+                                Visite nossa loja física. Lugar arejado por 2 ventiladores arno 6 helices. Não aceitamos fiado.
+                                Supostamente localizados no Shopping Paula Dentinho, Piso 7. Bairro da Paz (guerra de fac) - Salvador/BA
+                            </p>
+                            <span class="text-colored-blue fw-bold">#VáDeBahia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="eventos" class="pt-5 pb-0">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center"> <span class="text-colored-w">Para todas as ocasiões</span></h2>
+                    <h4 class="p-3 text-colored">Se você é aquela pessoa que usa o manto como quase que uma farda, e vai pra todos os lugares trajado de esquadrão, não importando o evento, você é dos nossos. <span class="text-colored-blue fw-bold">#VáDeBahia!!</span></h3>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="./images/eventos/confra.jpg" alt="" class="d-block w-100 rounded mb-2 h-50">
+                        <h3 class="section-tittle text-colored fs-5">
+                            Confraternizações
+                        </h3>
+                        <p>
+                            Aquela resenha com os amigos; aniversário de um parente que você nem faz questão de ver, mas não nega uma boca livre. Nem precisa pensar numa roupa ideal, <span class="text-colored-blue">#VáDeBahia!!</span> a roupa ideal pra tudo.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./images/festa.webp" alt="" class="d-block w-100 rounded mb-2 h-50">
+                        <h3 class="section-tittle text-colored fs-5">
+                            Reveillon
+                        </h3>
+                        <p>
+                            Cansado de romper seu ano de amarelo e no ano seguinte continuar duro? Passar de branco não adianta muito, morando na Bahia, paz é a coisa mais improvável de se ter. <span class="text-colored-blue">#VáDeBahia!!</span> E reza pra nós ganharmos tudo no ano seguinte.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./images/eventos/enterro.webp"# alt="" class="d-block w-100 rounded mb-2 h-50">
+                        <h3 class="section-tittle text-colored fs-5">
+                            Enterro
+                        </h3>
+                        <p>
+                            Nem só de alegria vive o pobre torcedor. Momentos tristes também necessitam de uma camisa ideal, e a camisa ideal você ja sabe qual é! <span class="text-colored-blue">#VáDeBahia!!</span> Só sossego.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cardapio" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">
+                        <span class="text-colored-w">Nossos produtos</span>
+                    </h2>
+                </div>
+                    <div class="row pb-4">
+                        <nav class="nav justify-content-center nav-pills nav-cardapio">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#camisas-jogo" class="fw-bold text-start nav-link  active">Camisas de jogo</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#camisetas" class="fw-bold text-start nav-link ">Camisetas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bermudas" class="fw-bold text-start nav-link ">Bermudas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#linha-de-frio" class="fw-bold text-start nav-link ">Linhas de inverno</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#acessorios" class="fw-bold text-start nav-link ">Acessórios</button>
+                        </nav>
+                    </div>
+                    <div class="row"></div>
+                    <div class="col-md-12">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="camisas-jogo">
+                                <div class="row">
+                                    <div class="col-md-3 mb-3">
+                                        <img src="./images/produtos/camisas/branca-24.webp" alt="camisa bahia branca 2024" class="d-block w-100 rounded">
+                                        <h5 class="text-colored fw-bold mt-3">Camisa 1 - Branca (2024)</h5>
+                                        <span>R$ 350,00</span>
+                                        <button type="button" class="buy-button btn btn-primary btn-primary">COMPRAR</button>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <img src="./images/produtos/camisas/tricolor-24.avif" alt="camisa do bahia tricolor 2024" class="d-block w-100 rounded">
+                                        <h5 class="text-colored fw-bold mt-3">Camisa 2 - Tricolor (2024)</h5>
+                                        <span>R$350,00</span>
+                                        <button type="button" class="buy-button btn btn-primary">COMPRAR</button>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <img src="./images/produtos/camisas/tricolor-88.jpg" alt="camisa tricolor Homenagem a 1988" class="d-block w-100 rounded">
+                                        <h5 class="text-colored fw-bold mt-3">Camisa Homenagem 1988 (2024)</h5>
+                                        <span>R$ 250,00</span>
+                                        <button type="button" class="buy-button btn btn-primary">COMPRAR</button>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <img src="./images/produtos/camisas/city-2023.jpg" alt="camisa do bahia ciano 2023" class="d-block w-100 rounded">
+                                        <h5 class="text-colored fw-bold mt-3">Camisa 3 - City (2023)</h5>
+                                        <span>R$200,00</span>
+                                        <button type="button" class="buy-button btn btn-primary">COMPRAR</button>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <img src="./images/produtos/camisas/Branca-2023.webp" alt="camisa bahia branca 2023" class="d-block w-100 rounded">
+                                        <h5 class="text-colored fw-bold mt-3">Camisa 1- branca (2023)</h5>
+                                        <span>R$ 250,00</span>
+                                        <button type="button" class="buy-button btn btn-danger">ESGOTADO</button>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <img src="./images/produtos/camisas/tricolor-2023.webp" alt="camisa do bahia tricolor 2023" class="d-block w-100 rounded">
+                                        <h5 class="text-colored fw-bold mt-3">Camisa 2 - Tricolor (2023)</h5>
+                                        <span>R$ 250,00</span>
+                                        <button type="button" class="buy-button btn btn-danger">ESGOTADO</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="camisetas">
+                                <div class="row">
+                                    <div class="col-md-3 mb-3">
+                                        <img src="./images/produtos/regatas/regataBranca.webp" alt="Regata bahia Branca" class="d-block w-100 rounded">
+                                        <h5 class="text-colored fw-bold mt-3">Regata Branca</h5>
+                                        <span>R$ 120,00</span>
+                                        <button type="button" class="buy-button btn btn-primary">COMPRAR</button>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <img src="./images/produtos/regatas/regataTricolor.webp" alt="regata tricolor do bahia" class="d-block w-100 rounded">
+                                        <h5 class="text-colored fw-bold mt-3">Regata Tricolor</h5>
+                                        <span>R$ 120,00</span>
+                                        <button type="button" class="buy-button btn btn-primary">COMPRAR</button>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <img src="./images/produtos/regatas/basqueteBranca.webp" alt="Regata basquete - Branca" class="d-block w-100 rounded">
+                                        <h5 class="text-colored fw-bold mt-3">Regata Basquete - Branca</h5>
+                                        <span>R$ 130,00</span>
+                                        <button type="button" class="buy-button btn btn-primary">COMPRAR</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="bermudas">
+                                <div class="row">
+                                    <div class="col-md-3 mb-3">
+                                        <img src="./images/produtos/bermudas/bermuda2.webp" alt="bermuda do bahia" class="d-block w-100 rounded">
+                                        <h5 class="text-colored fw-bold mt-3">Bermuda Azurra (2023)</h5>
+                                        <span>R$ 100,00</span>
+                                        <button type="button" class="buy-button btn btn-danger">ESGOTADO</button>
+                                    </div>                                
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="linha-de-frio">
+                                <div class="row">
+                                    <div class="col-md-3 mb-3">
+                                        <img src="./images/produtos/de frio/94396604A2.avif" alt="jaqueta bahia" class="d-block w-100 rounded">
+                                        <h5 class="text-colored fw-bold mt-3">Jaqueta Azivis</h5>
+                                        <span>R$ 320,00</span>
+                                        <button type="button" class="buy-button btn btn-danger">ESGOTADO</button>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <img src="./images/produtos/de frio/blusaobranco.jpeg" alt="Salmão" class="d-block w-100 rounded">
+                                        <h5 class="text-colored fw-bold mt-3">Jaqueta Branca - Relíquia</h5>
+                                        <span>R$ 350,00</span>
+                                        <button type="button" class="buy-button btn btn-danger">ESGOTADO</button>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="acessorios">
+                                <div class="row">
+                                    <div class="col-md-3 mb-3">
+                                        <img src="./images/produtos/de frio/boné-branco.webp" alt="Boné branco do bahia" class="d-block w-100 rounded">
+                                        <h5 class="text-colored fw-bold mt-3">Boné Branco</h5>
+                                        <span>R$ 70,00</span>
+                                        <button type="button" class="buy-button btn btn-danger">ESGOTADO</button>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <img src="./images/produtos/de frio/pantufa.webp" alt="pantufa baby bahia" class="d-block w-100 rounded">
+                                        <h5 class="text-colored fw-bold mt-3">Pantufas para bebês</h5>
+                                        <span>R$ 70,00</span>
+                                        <button type="button" class="buy-button btn btn-primary">COMPRAR</button>
+                                    </div>                          
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">
+                        <span class="text-colored-w">Fale conosco</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form id="form">
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome:</label>
+                                <input type="text" id="nomeCompleto" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored" >Seu email:</label>
+                                <input type="email" id="email" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="tel" class="form-label fw-bold text-colored" >Seu telefone (opcional):</label>
+                                <input type="tel" id="tel" class="form-control" placeholder="(00) 00000-0000">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem:</label>
+                                <textarea class="form-control" id="mensagem"></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="text-colored bi bi-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="text-colored bi bi-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="text-colored bi bi-whatsapp"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <h3 class="section-title text-colored">
+                                <i class="bi bi-geo-alt"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Shopping Paula Dentinho, Piso 7. Bairro da Paz (guerra de fac) - Salvador/BA
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script>
+        $('#tel').mask('(00) 00000-0000');
+    </script>
+</body>
+</html>
